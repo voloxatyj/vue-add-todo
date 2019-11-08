@@ -6,7 +6,7 @@ import Vuex from 'vuex';
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  strict: true,
+  strict:true,
   state: {
   },
   mutations: {
@@ -14,8 +14,5 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-  },
-  plugins: [
-    createPersistedState(),
-  ],
-});
+  },plugins:[createPersistedState(),],
+})

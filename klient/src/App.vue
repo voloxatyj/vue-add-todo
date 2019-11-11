@@ -1,42 +1,27 @@
 <template>
-<v-system-bar>
-  <Toolbar />    
   <div id="app">
+        <Toolbar />
+     
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
   </div>
-</v-system-bar>
-</template>
+</template>  
+
 <script>
 import Toolbar from './components/Toolbar';
-export default{
+export default {
   components:{
     Toolbar,
   },
-};
-</script>  
+}
+</script>
+
 <style lang="scss">
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'McLaren', cursive;
   text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
 }
 </style>

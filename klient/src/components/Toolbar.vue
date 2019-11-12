@@ -1,7 +1,7 @@
 <template>
   <v-toolbar dense dark fixed>
           <v-toolbar-title>VUE TODO</v-toolbar-title>
-           <v-btn text v-if='isLoggedIn'>
+           <v-btn text v-if='isLoggedIn' to='/projects'>
             <v-icon>playlist_add_check</v-icon>
             Projects</v-btn>
           <v-spacer></v-spacer>
@@ -28,10 +28,10 @@
 import {mapGetters,mapActions} from 'vuex';
 export default {
   computed:{
-    ...mapGetters('authentics',['isLoggedIn',],),
+    ...mapGetters('authentication',['isLoggedIn',],),
   },
   methods:{
-    ...mapActions('authentics',['setToken','logout'],),
+    ...mapActions('authentication',['setToken','logout'],),
   },
 }
 </script>

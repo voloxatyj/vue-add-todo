@@ -1,17 +1,17 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import LogIn from '../views/LogIn.vue'
-import Register from '../views/Register.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Projects from '../views/Projects';
+import LogIn from '../views/LogIn.vue';
+import Register from '../views/Register.vue';
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
+    path: '/projects',
+    name: 'project',
+    component: Projects
+  }, 
   {
     path: '/login',
     name: 'login',

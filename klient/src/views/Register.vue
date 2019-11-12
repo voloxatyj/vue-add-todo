@@ -31,11 +31,11 @@ import {mapState,mapMutations,mapActions} from 'vuex';
 
 export default {
 computed: {
-  ...mapState('authentics',['registerEmail','registerPassword','registerError',]),
+  ...mapState('authentication',['registerEmail','registerPassword','registerError',]),
 },
 methods:{
-  ...mapMutations('authentics',['setRegisterEmail','setRegisterPassword','setRegisterError',]),
-  ...mapActions('authentics',['register',]),
+  ...mapMutations('authentication',['setRegisterEmail','setRegisterPassword','setRegisterError',]),
+  ...mapActions('authentication',['register',]),
 },
 }
 </script>

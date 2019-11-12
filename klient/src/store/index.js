@@ -1,8 +1,8 @@
-//import createPersistedState from 'vuex-persistedstate';
-
 import Vue from 'vue';
 import Vuex from 'vuex';
-import authentics from './authentics';
+import authentication from './authentication';
+import projects from './projects';
+
 
 Vue.use(Vuex);
 
@@ -18,7 +18,9 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    authentics,
+    authentication,
+    projects,
+    
   },
   /* plugins:{
     [createPersistedState()]

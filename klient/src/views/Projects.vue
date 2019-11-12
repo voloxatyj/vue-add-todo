@@ -1,0 +1,37 @@
+<template>
+  <v-container>
+   <v-layout>
+    <v-flex xs4>
+     <Projects></Projects>
+    </v-flex>
+    <v-spacer>||</v-spacer>
+    <v-flex xs8>
+     <Panel title="Tasks"></Panel>
+    </v-flex>
+   </v-layout>
+  </v-container>
+</template>
+
+<script>
+import { mapGetters } from 'vuex';
+import Projects from '../components/Projects';
+import router from '../router/';
+
+export default {
+ components:{
+  Projects,
+ },
+ mounted(){
+  if(!this.isLoggedIn){
+   return router.push('/login')
+  }
+ },
+ computed:{
+  ...mapGetters('authentication',['isLoggedIn',]),
+ },
+}
+</script>
+
+<style>
+
+</style>

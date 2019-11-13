@@ -4,8 +4,8 @@
     <v-flex xs4>
      <Projects></Projects>
     </v-flex>
-    <v-spacer>||</v-spacer>
-    <v-flex xs8>
+    
+    <v-flex xs8 class="tasks">
      <Panel title="Tasks"></Panel>
     </v-flex>
    </v-layout>
@@ -33,5 +33,7 @@ export default {
 </script>
 
 <style>
-
+.tasks{
+ margin-left:5rem;
+}
 </style>

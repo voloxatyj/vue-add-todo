@@ -19,7 +19,7 @@
        ></v-text-field>
        <v-alert type='error' :value='loginError'>{{loginError}}</v-alert>
       <v-btn dark @click="login">
-      <v-icon dense dark fixed>fingerprint</v-icon>
+      <v-icon dense dark fixed class="icon">fingerprint</v-icon>
       LogIn</v-btn>
      </v-flex>
     </v-layout> 

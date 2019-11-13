@@ -1,11 +1,6 @@
 <template>
   <div>
-   <v-toolbar
-   flat
-   dense
-   dark
-   color="green"
-   >
+   <v-toolbar dense dark>
    <v-toolbar-title>
     {{title}}
    </v-toolbar-title>

@@ -19,7 +19,7 @@
        ></v-text-field>
        <v-alert type='error' :value='registerError'>{{registerError}}</v-alert>
       <v-btn dark @click="register">
-      <v-icon dense dark fixed>account_circle</v-icon>
+      <v-icon dense dark fixed class="icon">account_circle</v-icon>
       Register</v-btn>
      </v-flex>
     </v-layout> 

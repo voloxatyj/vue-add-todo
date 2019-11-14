@@ -7,6 +7,7 @@ export default {
  state: {
   projects:[],
   newProjectName:null,
+  currentProject:null,
  },
  actions: {
   deleteProject({ commit }, project) {
@@ -50,6 +51,9 @@ export default {
   },
   setProjects(state,projects){
    state.projects=projects;
+  },
+  setCurrentProject(state,project){
+    state.currentProject = project
   },
   setProjectTitle(state,{project,title}){
    project.title=title;

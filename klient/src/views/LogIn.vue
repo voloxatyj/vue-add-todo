@@ -16,6 +16,7 @@
        autocomplete="new-password"
        :value="loginPassword"
        @input="setLoginPassword"
+       @keyup.enter="login"
        ></v-text-field>
        <v-alert type='error' :value='loginError'>{{loginError}}</v-alert>
       <v-btn dark @click="login">

@@ -4,7 +4,7 @@
      <v-text-field
       :placeholder="placeholder"
       :value="value"
-      @input="$emit('set',$event)"
+      @input="$emit('onInput',$event)"
       @keyup.enter="$emit('create')"
       ></v-text-field>
       </v-flex>
@@ -19,7 +19,7 @@ export default {
 props:[
  'placeholder',
  'value',
- 'set',
+ 'onInput',
  'create',
 ],
 }
